@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class DiaryPage extends ConsumerWidget {
-  const DiaryPage({super.key});
+class DiaryScreen extends ConsumerWidget {
+  const DiaryScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
