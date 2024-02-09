@@ -8,4 +8,8 @@ class FocusDay extends _$FocusDay {
   DateTime build() {
     return DateTime.now();
   }
+
+  void onDaySelected({required DateTime focusDay}) {
+    state = focusDay;
+  }
 }

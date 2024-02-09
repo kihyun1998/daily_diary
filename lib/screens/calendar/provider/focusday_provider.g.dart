@@ -6,7 +6,7 @@ part of 'focusday_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$focusDayHash() => r'a79e4db5b8f63f3079007ea46b171c828c1999c4';
+String _$focusDayHash() => r'ec8efa0904792c06b8ddc4bb868591d42460a55b';
 
 /// See also [FocusDay].
 @ProviderFor(FocusDay)

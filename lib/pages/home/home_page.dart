@@ -1,6 +1,6 @@
 import 'package:daily_diary/pages/home/provider/page_index_provider.dart';
 import 'package:daily_diary/screens/calendar/calendar_page.dart';
-import 'package:daily_diary/screens/diary/diary_page.dart';
+import 'package:daily_diary/screens/table/table_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -10,7 +10,7 @@ class HomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final List<Widget> pages = [
-      const DiaryScreen(),
+      const TableScreen(),
       const CalendarScreen(),
     ];
 
@@ -33,7 +33,7 @@ class HomePage extends ConsumerWidget {
         },
         selectedIndex: selectedIndex,
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.book), label: "Diary"),
+          NavigationDestination(icon: Icon(Icons.table_chart), label: "Table"),
           NavigationDestination(
               icon: Icon(Icons.calendar_month), label: "Calendar"),
         ],
