@@ -14,6 +14,7 @@ class CalendarScreen extends ConsumerWidget {
     final calendarFormat = ref.watch(calendarsFormatProvider);
     final selectedDay = ref.watch(selectedDayProvider).selectedDay;
     final isSelected = ref.watch(selectedDayProvider).isSelected;
+
     return Scaffold(
       body: SafeArea(
         child: GestureDetector(
