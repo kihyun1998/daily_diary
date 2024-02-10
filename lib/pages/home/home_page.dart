@@ -23,7 +23,37 @@ class HomePage extends ConsumerWidget {
       ),
       body: pages[selectedIndex],
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (context) {
+              TextEditingController controller = TextEditingController();
+              return AlertDialog(
+                title: const Text("How was your day?"),
+                content: TextField(
+                  controller: controller,
+                  decoration:
+                      const InputDecoration(hintText: "Please write here.."),
+                  maxLength: 100,
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () {
+                      print("Press Cancel");
+                    },
+                    child: const Text("Cancel"),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      print("Press Add");
+                    },
+                    child: const Text("Add"),
+                  ),
+                ],
+              );
+            },
+          );
+        },
         child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
